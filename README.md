@@ -1,7 +1,11 @@
 # PasteBin
 Yet another PasteBin, all right?
 
-## Install
+## Install Automatically
+
+just access `install/index.php`.
+
+## Install Manully
 Create a new php file named CONFIG.php in /protected/model/ and insert:
 ```
 <?php
@@ -42,6 +46,6 @@ class CONFIG {
 
 ```
 
-The type in the configuration of your mysql server to this file.
+The type in the configuration of your mysql server to this file. Next you need to import the `pastebin.lite.sql` to your database.
 
 **NOTICE :** Normally, you only need to set fields with DEBUG.

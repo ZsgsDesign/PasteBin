@@ -1,0 +1,35 @@
+<?php
+
+class CONFIG {
+    
+    /**
+     * CONFIG
+     *
+     * @author John Zhang
+     * @param string $KEY
+     */
+
+    public static function GET($KEY)
+    {
+        $config=array(
+            "PB_DEBUG_MYSQL_HOST"=>"localhost",
+            "PB_DEBUG_MYSQL_PORT"=>"3306",
+            "PB_DEBUG_MYSQL_USER"=>"root",
+            "PB_DEBUG_MYSQL_DATABASE"=>"pastebin",
+            "PB_DEBUG_MYSQL_PASSWORD"=>"root",
+
+            "PB_MYSQL_HOST"=>"",
+            "PB_MYSQL_PORT"=>"",
+            "PB_MYSQL_USER"=>"",
+            "PB_MYSQL_DATABASE"=>"",
+            "PB_MYSQL_PASSWORD"=>"",
+
+            "PB_CDN"=>"https://static.1cf.co",
+            "PB_DOMAIN"=>"",
+            "PB_SALT"=>"12345678"
+        );
+        return $config[$KEY];
+    }
+    
+
+}
