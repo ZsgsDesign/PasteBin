@@ -1,5 +1,3 @@
 <?php
-    require_once("protected/core/conn.php");
-    require_once("protected/core/core.php");
-    
-    $core->viewIndex();
+define('APP_DIR', realpath('./'));
+require(APP_DIR.'/protected/lib/speed.php');

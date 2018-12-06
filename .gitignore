@@ -1,2 +1,2 @@
-/s/*.html
-!/s/index.html
+/protected/tmp/*.php
+/protected/model/CONFIG.php
